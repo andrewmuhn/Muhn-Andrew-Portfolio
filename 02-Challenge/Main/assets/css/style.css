@@ -131,7 +131,7 @@ main {
   justify-content: space-between;
 }
 
-.page-section > h2 {
+.page-section>h2 {
   flex: 0 0 20%;
   text-align: right;
   padding-right: 15px;
@@ -140,7 +140,7 @@ main {
   line-height: 1.1;
 }
 
-.page-section > div {
+.page-section>div {
   flex: 0 0 77%;
 }
 
@@ -174,8 +174,8 @@ main {
 
 /* feature first portfolio item */
 .flex-item:first-child {
-    min-height: 400px;
-    flex-basis: 100%;
+  min-height: 400px;
+  flex-basis: 100%;
 }
 
 .flex-item:hover {
@@ -260,12 +260,12 @@ main {
     justify-content: center;
   }
 
-  .page-section > h2,
-  .page-section > div {
+  .page-section>h2,
+  .page-section>div {
     flex: 0 0 100%;
   }
 
-  .page-section > h2 {
+  .page-section>h2 {
     border-right: none;
     border-bottom: 4px solid var(--primary);
     margin-bottom: 20px;
@@ -276,6 +276,7 @@ main {
 }
 
 @media screen and (max-width: 768px) {
+
   .flex-item,
   .flex-item:first-child {
     flex-basis: 100%;
