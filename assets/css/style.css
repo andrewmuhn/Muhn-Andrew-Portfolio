@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --primary: #26304a;
+    --secondary: #c8a81c;
+    --tertiary: #6b211f;
+    --dark: #e3cfb1;
+    --light: #eae1c9;
+}
+
+body {
+    background-color: var(--light);
+    color: var(--primary);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.5;
+}
