@@ -80,10 +80,27 @@ nav a:hover {
     margin: 25px 0;
     padding: 10px 0;
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     align-items: stretch;
     justify-content: space-between;
+}
+
+.section-container>h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    font-size: 3.5vw;
+}
+
+.section-container>div {
+    flex: 0 0 70%;
+}
+
+#about {
+    flex-direction: row-reverse;
+}
+
+#about>img {
+    max-width: 200px;
 }
 
 .project-container {
@@ -95,34 +112,35 @@ nav a:hover {
 .projects {
     border: 5px solid var(--secondary);
     background-repeat: no-repeat;
+    background-position: left 0% top 20%;
     color: var(--tertiary);
     min-height: 200px;
     max-height: 400px;
-    flex-basis: 600px;
+    flex-basis: calc(50% - 1em);
     display: flex;
+    align-items: center;
     padding: 0 0 20px 0;
     margin: 0.5em;
     text-decoration: none;
-    background-size: 100%;
+    background-size: 150%;
     font-size: 0.9rem;
 }
 
-.projects div {
+.projects:first-child {
+    min-height: 300px;
+    flex-basis: 100%;
+    background-size: 115%;
+
+}
+
+.projects>div {
     background-color: var(--secondary);
-    display: flex;
-    flex: 0 0 77%;
+    padding: 5px 5px;
 }
 
-h3 {
+.projects h3 {
     font-family: 'oswald' sans-serif;
-    display: flex;
-    align-items: flex-start;
-    font-size: 1.6rem;
-}
-
-.projects p {
-    display: flex;
-    align-items: flex-end;
+    font-size: 2em;
 }
 
 /* Project Background Images*/
