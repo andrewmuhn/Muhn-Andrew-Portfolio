@@ -1,12 +1,15 @@
+/* pre styling */
+
 * {
     box-sizing: border-box;
 }
 
+/* color pallete */
 :root {
     --primary: #26304a;
     --secondary: #fad42a;
     --tertiary: #6b211f;
-    --dark: #eec17d;
+    --dark: #cc9a4f;
     --light: #c5dcec;
 }
 
@@ -28,9 +31,7 @@ h6 {
     margin: 0;
 }
 
-p {
-    margin: 5 0;
-}
+/* styling main header and nav bar */
 
 header {
     background-color: var(--primary);
@@ -38,6 +39,7 @@ header {
     flex-direction: row;
     justify-content: space-between;
     min-height: 100px;
+    min-width: 100%;
 }
 
 header h1 {
@@ -49,6 +51,7 @@ header h1 {
     font-style: italic;
     padding: 0px 2% 0px 2%;
     margin: 2% 0 2% 0;
+    border-radius: 0 10px 10px 0;
 }
 
 nav {
@@ -59,27 +62,58 @@ nav {
 
 nav a {
     background-image: linear-gradient(0deg, var(--tertiary) 0%, var(--tertiary) 100%);
-    background-position: bottom;
+    background-position: left;
     background-repeat: no-repeat;
-    background-size: 100% 0.2em;
+    background-size: 5px 100%;
     color: var(--dark);
     font-size: 1.6rem;
     margin: 5px;
     padding: 2px 10px;
     text-decoration: none;
     text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
 }
 
 nav a:hover {
     background-size: 100% 100%;
-    transition: all 0.25s ease-in-out;
     cursor: pointer;
 }
+
+/* banner seperating header from main content */
+
+.banner {
+    background-image: url(/assets/images/Banner.png);
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 200px;
+    color: var(--dark);
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.banner h2 {
+    background-color: var(--primary);
+    padding: .5rem 1rem;
+    border-radius: 10px;
+    margin: 10px 50px;
+    flex-basis: 20%;
+    text-align: center;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+/* styling main content */
 
 .main {
     max-width: 95%;
     margin-left: auto;
     margin-right: auto;
+}
+
+p {
+    margin: 5 0;
 }
 
 .section-container {
@@ -93,13 +127,11 @@ nav a:hover {
     border-bottom: 5px solid var(--tertiary);
 }
 
-h2 {
+h3 {
     font-size: 2.8rem;
     justify-content: center;
     align-items: center;
 }
-
-#about {}
 
 .about-me {
     display: flex;
@@ -124,7 +156,7 @@ h2 {
     flex-direction: row-reverse;
 }
 
-#work>h2 {
+#work>h3 {
     align-self: center;
     margin: 0 auto;
 }
@@ -149,27 +181,65 @@ h2 {
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: center;
-    padding: 0 0 20px 0;
     margin: 0.5em;
     text-decoration: none;
     background-size: 150%;
     font-size: 0.9rem;
+    transition: all .5s ease-in;
+
 }
 
+/* targets first feature project */
 .projects:first-child {
     min-height: 300px;
     flex-basis: 100%;
     background-size: 115%;
 }
 
-.projects>div {
+.projects-child {
     background-color: var(--secondary);
-    padding: 5px 5px;
+    padding: 5px 10px 0 5px;
+    border-radius: 0 10px 10px 0;
 }
 
-.projects h3 {
+.projects h4 {
     font-family: 'oswald' sans-serif;
     font-size: 2em;
+}
+
+.projects:hover {
+    background-size: 100%;
+}
+
+.projects:hover .projects-child {
+    opacity: 70%;
+}
+
+.contact-me {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    border-left: 5px solid var(--primary);
+    padding-left: 30px;
+    flex: 0 1 70%;
+}
+
+.contact-me a {
+    background-image: linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: 5px 100%;
+    color: var(--tertiary);
+    font-size: 1.6rem;
+    margin: 5px;
+    padding: 2px 10px;
+    text-decoration: none;
+    transition: all .25s ease-in-out;
+}
+
+.contact-me a:hover {
+    background-size: 100% 100%;
 }
 
 /* Project Background Images*/
@@ -177,7 +247,7 @@ h2 {
     background-image: url('/assets/images/Smokey.png');
 }
 
-#buttes {
+#butte {
     background-image: url('/assets/images/Buttes.png');
 }
 
