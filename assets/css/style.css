@@ -248,23 +248,23 @@ h3 {
 
 /* Project Background Images*/
 #smokey {
-    background-image: url('/assets/images/Smokey.png');
+    background-image: url('./assets/images/Smokey.png');
 }
 
 #butte {
-    background-image: url('/assets/images/Buttes.png');
+    background-image: url('./assets/images/Buttes.png');
 }
 
 #biking {
-    background-image: url('/assets/images/Biking.png');
+    background-image: url('./assets/images/Biking.png');
 }
 
 #canyon {
-    background-image: url('/assets/images/Canyon.png');
+    background-image: url('./assets/images/Canyon.png');
 }
 
 #lake {
-    background-image: url('/assets/images/Lake.png');
+    background-image: url('./assets/images/Lake.png');
 }
 
 /* media queries to make the site more reactive*/
