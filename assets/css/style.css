@@ -82,8 +82,8 @@ nav a:hover {
 /* banner seperating header from main content */
 
 .banner {
-    background-image: url(/assets/images/Banner.png);
-    background-size: 100%;
+    background-image: url("/assets/images/Banner.png");
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 200px;
@@ -98,7 +98,7 @@ nav a:hover {
     padding: .5rem 1rem;
     border-radius: 10px;
     margin: 10px 50px;
-    flex-basis: 20%;
+    min-width: 100px;
     text-align: center;
     font-size: 2rem;
     font-style: italic;
@@ -150,6 +150,10 @@ h3 {
     flex: 0 1 70%;
     border-left: 5px solid var(--primary);
     padding-left: 30px;
+}
+
+.about-text>div>img {
+    display: none;
 }
 
 #work {
@@ -261,4 +265,100 @@ h3 {
 
 #lake {
     background-image: url('/assets/images/Lake.png');
+}
+
+/* media queries to make the site more reactive*/
+
+@media screen and (max-width: 980px) {
+    .section-container {
+        flex-direction: column;
+        border: none;
+        justify-content: center;
+    }
+
+    .about-me {
+        flex-direction: row;
+        writing-mode: horizontal-tb;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .about-me>img {
+        display: none;
+    }
+
+    .about-text {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-text>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .about-text>div>img {
+        display: block;
+        max-width: 200px;
+        align-self: flex-end;
+        margin: 10px 10px 0 30px;
+    }
+
+    .about-text,
+    .project-container,
+    .contact-me {
+        flex: 0 0 100%;
+        justify-content: center;
+        border-top: 5px solid var(--primary);
+        border-left: none;
+        border-right: none;
+    }
+
+    .project-container {
+        flex: 0 0 100%;
+        padding-right: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    header {
+        flex-direction: column;
+    }
+
+    header h1 {
+        width: 100%;
+        border-radius: 0 0 0 0;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    nav {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .banner {
+        justify-content: center;
+    }
+
+    .about-text>div {
+        flex-direction: column-reverse;
+    }
+
+    .about-text>div>img {
+        align-self: center;
+        margin: 10px 0 0 0;
+    }
+
+    .projects,
+    .projects:first-child {
+        flex-basis: 100%;
+    }
+
+    .contact-me {
+        flex-direction: column;
+        width: 100%;
+    }
 }
