@@ -82,7 +82,7 @@ nav a:hover {
 /* banner seperating header from main content */
 
 .banner {
-    background-image: url("/assets/images/banner.png");
+    background-image: url("/assets/images/Banner.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -248,7 +248,7 @@ h3 {
 
 /* Project Background Images*/
 #smokey {
-    background-image: url('../images/smokey.png');
+    background-image: url('../images/Smokey.png');
 }
 
 #butte {
@@ -256,15 +256,15 @@ h3 {
 }
 
 #biking {
-    background-image: url('../images/biking.png');
+    background-image: url('../images/Biking.png');
 }
 
 #canyon {
-    background-image: url('../images/canyon.png');
+    background-image: url('../images/Canyon.png');
 }
 
 #lake {
-    background-image: url('../images/lake.png');
+    background-image: url('../images/Lake.png');
 }
 
 /* media queries to make the site more reactive*/
