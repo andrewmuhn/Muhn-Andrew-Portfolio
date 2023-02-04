@@ -1,5 +1,4 @@
 /* pre styling */
-
 * {
     box-sizing: border-box;
 }
@@ -133,10 +132,13 @@ h3 {
     align-items: center;
 }
 
+/* about me section styling */
+
 .about-me {
     display: flex;
     flex-direction: column-reverse;
     flex-basis: 20%;
+    /* writing-mode allows the text to be turn vertically */
     writing-mode: vertical-lr;
 }
 
@@ -152,9 +154,12 @@ h3 {
     padding-left: 30px;
 }
 
+/* this image is only displayed at smaller view windows */
 .about-text>div>img {
     display: none;
 }
+
+/* work section styling */
 
 #work {
     flex-direction: row-reverse;
@@ -182,6 +187,7 @@ h3 {
     color: var(--tertiary);
     min-height: 200px;
     max-height: 400px;
+    /* flex basis sets project divs to take up slightly smaller than hlaf their available width so that two fit nicely on a row */
     flex-basis: calc(50% - 1em);
     display: flex;
     align-items: center;
@@ -193,9 +199,10 @@ h3 {
 
 }
 
-/* targets first feature project */
+/* targets first feature project*/
 .projects:first-child {
     min-height: 300px;
+    /* flex basis differs from above to let it take up the whole available width */
     flex-basis: 100%;
     background-size: 115%;
 }
@@ -215,10 +222,12 @@ h3 {
     background-size: 100%;
 }
 
+/* affects the child element when hovering over the parent. In this case affects the div containing the h4 and span elements */
 .projects:hover .projects-child {
     opacity: 70%;
 }
 
+/* contact-me section styling */
 .contact-me {
     display: flex;
     flex-direction: row;
@@ -230,6 +239,7 @@ h3 {
 }
 
 .contact-me a {
+    /* same as nav bar styling to create the affect of a sliding highlite */
     background-image: linear-gradient(0deg, var(--secondary) 0%, var(--secondary) 100%);
     background-position: left;
     background-repeat: no-repeat;
@@ -284,6 +294,7 @@ h3 {
         justify-content: center;
     }
 
+    /* hides profile image next to About Me h3 elements */
     .about-me>img {
         display: none;
     }
@@ -298,6 +309,7 @@ h3 {
         flex-direction: row;
     }
 
+    /* displays hidden headshot image inline with text */
     .about-text>div>img {
         display: block;
         max-width: 200px;
