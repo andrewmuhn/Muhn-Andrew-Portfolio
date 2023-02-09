@@ -16,7 +16,7 @@
 
 ![Full-size page screenshot](assets/images/andrewmuhn.github.io_Muhn-Andrew-Portfolio_%20.png)
 
-![Mobile sized screenshot](assets/images/andrewmuhn.github.io_Muhn-Andrew-Portfolio_(Pixel%205).png)
+![Mobile sized screenshot](assets/images/andrewmuhn.github.io_Muhn-Andrew-Portfolio_(Pixel 5).png)
 
 [Link to deployed site](https://andrewmuhn.github.io/Muhn-Andrew-Portfolio/)
 
