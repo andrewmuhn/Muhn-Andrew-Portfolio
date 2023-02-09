@@ -14,9 +14,11 @@
 
 -Contact Section Links to various contact elements outside of webpage.
 
-![Full-size page screenshot](assets/images/andrewmuhn.github.io_Muhn-Andrew-Portfolio_.png)
+![Full-size page screenshot](assets/images/andrewmuhn.github.io_Muhn-Andrew-Portfolio_%20.png)
 
 ![Mobile sized screenshot](assets/images/andrewmuhn.github.io_Muhn-Andrew-Portfolio_(Pixel%205).png)
+
+[Link to deployed site](https://andrewmuhn.github.io/Muhn-Andrew-Portfolio/)
 
 ## Credits
 
