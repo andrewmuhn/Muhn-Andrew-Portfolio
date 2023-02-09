@@ -257,23 +257,23 @@ h3 {
 }
 
 /* Project Background Images*/
-#smokey {
-    background-image: url('../images/Smokey.png');
+#project-1 {
+    background-image: url('../images/RPS.jpg');
 }
 
-#butte {
-    background-image: url('../images/Buttes.png');
+#project-2 {
+    background-image: url('../images/Horiseon.png');
 }
 
-#biking {
+#project-3 {
     background-image: url('../images/Biking.png');
 }
 
-#canyon {
+#project-4 {
     background-image: url('../images/Canyon.png');
 }
 
-#lake {
+#project-5 {
     background-image: url('../images/Lake.png');
 }
 

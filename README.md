@@ -21,3 +21,6 @@
 ## Credits
 
 UofO EdX Bootcamp Coursework
+
+RPS.jpg image: Creator: villorejo 
+Credit: Shutterstock / villorejo
