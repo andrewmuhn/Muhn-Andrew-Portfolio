@@ -366,6 +366,7 @@ h3 {
 
     .projects,
     .projects:first-child {
+        min-height: 200px;
         flex-basis: 100%;
     }
 
