@@ -1,109 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Andrew Muhn</title>
-    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="./assets/images/favicon.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Oswald:wght@500;600;700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/normalize.css">
-    <link rel="stylesheet" href="./assets/css/style.css" type="text/css">
-</head>
+      href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@1,700&family=Oswald:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" type="text/css" />
+  </head>
 
-<body>
+  <body>
     <header>
-        <h1>Andrew</h1>
-        <!-- Nav bar contains UI links to correspoding sections. 
+      <h1>Andrew</h1>
+      <!-- Nav bar contains UI links to correspoding sections. 
         TODO: Update Resume Link to link to actual resume when I have a coding resume  -->
-        <nav>
-            <a href="#about">about me</a>
-            <a href="#work">work</a>
-            <a href="#contact">contact me</a>
-            <a href="#">resume</a>
-        </nav>
+      <nav>
+        <a href="#about">about me</a>
+        <a href="#work">work</a>
+        <a href="#contact">contact me</a>
+        <a href="#">resume</a>
+      </nav>
     </header>
 
     <!--  -->
     <div class="banner">
-        <h2>A study in play</h2>
+      <h2>A study in play</h2>
     </div>
 
     <main class="main">
-        <section class="section-container" id="about">
-            <div class="about-me">
-                <h3>About Me</h3>
-                <img src="./assets/images/Profile.png" alt="Photo of the author on a backpacking trip in the Tetons">
+      <section class="section-container" id="about">
+        <div class="about-me">
+          <h3>About Me</h3>
+          <img
+            src="./assets/images/Profile.png"
+            alt="Photo of the author on a backpacking trip in the Tetons"
+          />
+        </div>
+        <div class="about-text">
+          <div>
+            <p>
+              My name is Andrew Muhn. I have spent most of my adult life living,
+              playing and teaching in the outdoors. Spending months guiding
+              students through backpacking trips, climbing adventures, rafting
+              rivers, and exploring their own backyards. The ability to use my
+              time has been such a reward and I have a plethora of fond memories
+              in addition to many trials and tribulations. However, it is time
+              for me to try something new. Coding is the next adventure. It some
+              ways I hope it will allow me more time to pursue the outdoors even
+              if some question my willingness to oggle at a computer's screen.
+            </p>
+            <img
+              src="./assets/images/Headshot.png"
+              alt="Headshot of the author while packswimming."
+            />
+          </div>
+          <p>
+            Currently I'm most excited about being able to continue to use my
+            native intrigue for problem solving in a concrete way. The
+            challenges that come with coding in the various languages I'm sure
+            will be many, but I hope to find them all to be adept at solving
+            unique problems.
+          </p>
+        </div>
+      </section>
+      <section class="section-container" id="work">
+        <h3>Work</h3>
+        <div class="project-container">
+          <a
+            href="https://andrewmuhn.github.io/harry-potter-spell-book/"
+            class="projects"
+            id="project-1"
+          >
+            <div class="projects-child">
+              <h4>Harry Potter Spell Book</h4>
+              <p>FrontEnd Web App<br />w/ Server Side Apis</p>
             </div>
-            <div class="about-text">
-                <div>
-                    <p>My name is Andrew Muhn. I have spent most of my adult life living, playing and teaching in the
-                        outdoors. Spending months guiding students through backpacking trips, climbing adventures,
-                        rafting rivers, and exploring their own backyards. The ability to use my time has been such a
-                        reward and I have a plethora of fond memories in addition to many trials and tribulations.
-                        However, it is
-                        time for me to try something new. Coding is the next adventure. It some ways I hope it will
-                        allow me more time to pursue the outdoors even if some question my willingness to oggle at a
-                        computer's screen.</p>
-                    <img src="./assets/images/Headshot.png" alt="Headshot of the author while packswimming.">
-                </div>
-                <p>Currently I'm most excited about being able to continue to use my native intrigue for problem solving
-                    in a concrete way. The challenges that come with coding in the various languages I'm sure will be
-                    many, but I hope to find them all to be adept at solving unique problems.</p>
+          </a>
+          <a
+            href="https://cookscompanion.herokuapp.com/"
+            class="projects"
+            id="project-2"
+          >
+            <div class="projects-child">
+              <h4>Cook's Companiopn</h4>
+              <p>Handlebaars, mySQL, Express</p>
             </div>
-        </section>
-        <section class="section-container" id="work">
-            <h3>Work</h3>
-            <div class="project-container">
-                <a href="https://andrewmuhn.github.io/harry-potter-spell-book/" class="projects" id="project-1">
-                    <div class="projects-child">
-                        <h4>Harry Potter Spell Book</h4>
-                        <p>FrontEnd Web App<br>w/ Server Side Apis</p>
-                    </div>
-                </a>
-                <a href="https://andrewmuhn.github.io/Week-1-Challenge/" class="projects" id="project-2">
-                    <div class="projects-child">
-                        <h4>Horiseon</h4>
-                        <p>Html/css</p>
-                    </div>
-                </a>
-                <a href="#" class="projects" id="project-3">
-                    <div class="projects-child">
-                        <h4>Biking</h4>
-                        <p>Lorem</p>
-                    </div>
-                </a>
-                <a href="#" class="projects" id="project-4">
-                    <div class="projects-child">
-                        <h4>Canyon</h4>
-                        <p>ipsum</p>
-                    </div>
-                </a>
-                <a href="#" class="projects" id="project-5">
-                    <div class="projects-child">
-                        <h4>Lake</h4>
-                        <p>Lorem</p>
-                    </div>
-                </a>
+          </a>
+          <a href="#" class="projects" id="project-3">
+            <div class="projects-child">
+              <h4>Biking</h4>
+              <p>Lorem</p>
             </div>
-        </section>
-        <section class="section-container" id="contact">
-            <h3>Contact Me</h3>
-            <address class="contact-me">
-                <a href="tel:8587766743">858.776.6743</a>
-                <a href="mailto:andrewmuhn@gmail.com">AndrewMuhn@gmail.com</a>
-                <a href="https://github.com/andrewmuhn" target="_blank">GitHub</a>
-                <a href="https://linkedin.com/in/andrew-muhn" target="_blank">LinkedIn</a>
-            </address>
-        </section>
+          </a>
+          <a href="#" class="projects" id="project-4">
+            <div class="projects-child">
+              <h4>Canyon</h4>
+              <p>ipsum</p>
+            </div>
+          </a>
+          <a href="#" class="projects" id="project-5">
+            <div class="projects-child">
+              <h4>Lake</h4>
+              <p>Lorem</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="section-container" id="contact">
+        <h3>Contact Me</h3>
+        <address class="contact-me">
+          <a href="tel:8587766743">858.776.6743</a>
+          <a href="mailto:andrewmuhn@gmail.com">AndrewMuhn@gmail.com</a>
+          <a href="https://github.com/andrewmuhn" target="_blank">GitHub</a>
+          <a href="https://linkedin.com/in/andrew-muhn" target="_blank"
+            >LinkedIn</a
+          >
+        </address>
+      </section>
     </main>
-
-</body>
-
+  </body>
 </html>
